@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003,
+            "pathMappings": {
+                "/opt/app": "${workspaceFolder}/opt/app",
+                "/opt/app/action": "${workspaceFolder}/opt/app/action",
+                "/opt/library": "${workspaceFolder}/opt/library",
+                "/opt/vendor": "${workspaceFolder}/opt/vendor"
+            }
+        }
+    ]
+}

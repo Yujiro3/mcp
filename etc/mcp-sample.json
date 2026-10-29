@@ -1,0 +1,18 @@
+{
+	"servers": {
+		"imagick-mcp": {
+			"url": "http://10.241.1.11:8080/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": [
+    {
+      "draw": [
+        ["setStrokeWidth", 2],
+        ["setStrokeColor", "#2563eb"],
+        ["setFillColor", "transparent"],
+        ["circle", [16, 16, 26, 16]]
+      ]
+    }
+  ]
+}

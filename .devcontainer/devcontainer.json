@@ -1,0 +1,11 @@
+{
+	"name": "php_xdebug_app",
+	"dockerComposeFile": [ 
+		"../docker-compose.yml"
+	],
+	"service": "shell",
+	"workspaceFolder": "/opt",
+	"forwardPorts": [
+		9003
+	]
+}

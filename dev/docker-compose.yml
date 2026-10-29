@@ -1,0 +1,14 @@
+services:
+    shell:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: "http-mcp:dev"
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        working_dir: "/opt"
+        environment:
+            - "TZ='Asia/Tokyo'"
+        volumes:
+            - $PWD/../etc:/opt/etc
+        tty: true

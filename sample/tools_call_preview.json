@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "id": "call-preview-1",
+  "method": "tools/call",
+  "params": {
+    "name": "preview",
+    "arguments": {
+      "id": "transforms:REPLACE_WITH_ID",
+      "canvas": [32, 32],
+      "format": "png"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>README</title>
+</head>
+<body>
+  <div>
+    <h2>mcp.json</h2>
+<pre>
+{
+	"servers": {
+		"imagick-mcp": {
+			"url": "http://10.241.1.11:8080/mcp",
+			"type": "http"
+		}
+	}
+}
+</pre>
+    <br>
+
+    <div>
+    <h2>curl.sh</h2>
+<pre>
+#!/usr/bin/env bash
+
+curl -sS -X POST "http://10.241.1.11:8080/mcp" \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}'
+
+</pre>
+    </div>
+</body>
+</html>

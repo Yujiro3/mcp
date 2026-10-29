@@ -1,0 +1,29 @@
+services:
+    redis:
+        image: "redis:7.4.10-alpine"
+        ports:
+            - "6379:6379"
+        volumes:
+            - "./data/redis:/data"
+    shell:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: "http-mcp:latest"
+        depends_on:
+            - redis
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        ports:
+            - 8080:80
+        working_dir: "/opt"
+        environment:
+            - "TZ='Asia/Tokyo'"
+            - "REDIS_HOST=redis"
+        volumes:
+            - $PWD/etc:/opt/etc
+            - $PWD/opt/app:/opt/app
+            - $PWD/opt/library:/opt/library
+            - $PWD/opt/public:/opt/public
+            - $PWD/tests:/opt/tests
+        tty: true

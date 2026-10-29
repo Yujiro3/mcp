@@ -1,0 +1,15 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.402",
+        "google/apiclient": "^2.20",
+        "mcp/sdk": "^0.9.0",
+        "monolog/monolog": "^3.12",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

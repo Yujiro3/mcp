@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "id": "call-transforms-1",
+  "method": "tools/call",
+  "params": {
+    "name": "transforms",
+    "arguments": {
+      "id": null,
+      "draw": [
+        { "method":"setStrokeWidth", "args":[2]},
+        { "method":"setStrokeColor", "args":["#2563eb"]},
+        { "method":"setFillColor", "args":["transparent"]},
+        { "method":"circle", "args":[16, 16, 26, 16]}
+      ]
+    }
+  }
+}

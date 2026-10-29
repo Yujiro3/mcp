@@ -1,0 +1,15 @@
+{
+  "jsonrpc": "2.0",
+  "id": "call-download-1",
+  "method": "tools/call",
+  "params": {
+    "name": "download",
+    "arguments": {
+      "id": "transforms:REPLACE_WITH_ID",
+      "canvas": [1024, 1024],
+      "format": "png",
+      "bg": "white",
+      "filename": "output.png"
+    }
+  }
+}
